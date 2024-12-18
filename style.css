@@ -29,7 +29,6 @@ ul {
 }
 
 li {
-    background-color: aqua;
     padding: 10px;
 }
 li h1 {
@@ -40,6 +39,6 @@ li h1 {
     text-align: left;
 }
 
-.selecao {
-    border:10px solid red;
+.bordaVerde {
+    border:10px solid green;
 }
