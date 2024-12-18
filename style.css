@@ -39,3 +39,7 @@ li h1 {
     font-weight: 700;
     text-align: left;
 }
+
+.selecao {
+    border:10px solid red;
+}
