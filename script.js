@@ -1,8 +1,7 @@
 function selecionarComida(opcao){
 
-    const secao = document.querySelector(".pratos");
     const selecionado = document.querySelector("." + opcao);
-    const selecionadoAntes = document.querySelector(".bordaVerde");
+    const selecionadoAntes = document.querySelector(".pratos .bordaVerde");
 
     if (selecionadoAntes !== null) {
         selecionadoAntes.classList.remove("bordaVerde");
@@ -16,7 +15,19 @@ function selecionarComida(opcao){
 function selecionarBebida(opcao){
 
     const selecionado = document.querySelector("." + opcao);
-    const selecionadoAntes = document.querySelector(".bordaVerde");
+    const selecionadoAntes = document.querySelector(".bebidas .bordaVerde");
+
+    if (selecionadoAntes !== null) {
+        selecionadoAntes.classList.remove("bordaVerde");
+    }
+    
+    selecionado.classList.add("bordaVerde");
+}
+
+function selecionarDoce(opcao){
+
+    const selecionado = document.querySelector("." + opcao);
+    const selecionadoAntes = document.querySelector(".doces .bordaVerde");
 
     if (selecionadoAntes !== null) {
         selecionadoAntes.classList.remove("bordaVerde");

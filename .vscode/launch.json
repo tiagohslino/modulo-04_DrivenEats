@@ -11,6 +11,7 @@
             "type": "chrome",
             "webRoot": "${workspaceFolder}"
         },
+        
         {
             "type": "chrome",
             "request": "launch",
