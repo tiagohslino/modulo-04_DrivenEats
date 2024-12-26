@@ -27,8 +27,7 @@ header h2 {
 
 ul {
     display: flex;
-
-    overflow-x: scroll;
+    justify-content: center;
 }
 
 li {
@@ -52,15 +51,3 @@ li h1 {
     border:3px solid rgb(10, 170, 10);
     border-radius: 2px;
 }
-
-@media screen and (min-width: 490px) { 
-    ul {
-        
-            display: flex;
-            justify-content: center;
-            overflow-x: scroll;
-        
-    }
-
-}
-
