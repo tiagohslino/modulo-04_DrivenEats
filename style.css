@@ -23,7 +23,7 @@ header h2 {
 
 ul {
     display: flex;
-    justify-content: center;
+    overflow-x: scroll;
 }
 
 li {
@@ -44,4 +44,12 @@ li h1 {
 .bordaVerde {
     border:3px solid rgb(10, 170, 10);
     border-radius: 2px;
+}
+
+@media (min-width: 414px) {
+    
+    ul {
+        justify-content: center;
+    }
+    
 }
