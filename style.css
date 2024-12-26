@@ -2,6 +2,10 @@ body {
     text-align: center;
 }
 
+/* versão mobile */
+
+
+
 header {
     background-color: red;
     color: white;
@@ -23,7 +27,8 @@ header h2 {
 
 ul {
     display: flex;
-    justify-content: center;
+
+    overflow-x: scroll;
 }
 
 li {
@@ -32,6 +37,8 @@ li {
 
 li img {
     cursor: pointer;
+    width: 144px;
+    height: 87px; 
 }
 
 li h1 {
@@ -45,3 +52,15 @@ li h1 {
     border:3px solid rgb(10, 170, 10);
     border-radius: 2px;
 }
+
+@media screen and (min-width: 490px) { 
+    ul {
+        
+            display: flex;
+            justify-content: center;
+            overflow-x: scroll;
+        
+    }
+
+}
+
