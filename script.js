@@ -1,6 +1,4 @@
 var i = 0;
-let nomePrato = "";
-let preco1 = "";
 
 function selecionarComida(selecionado){
 
@@ -55,18 +53,16 @@ function selecionarDoce(selecionado){
     
 }
 
-function comprar (){
+/* function comprar (){
 
-    nomePrato = "ok";
-
-    if (i>2) {
+    if (i > 2) {
         document.querySelector(".tela-confirmacao").classList.remove("escondido");
         document.querySelector(".tela-confirma-verde").classList.remove("escondido");
         document.querySelector(".pedidoFinal").classList.remove("botaoVerde");
 
-        const pedido1 = '{nomePrato} : ${preco1}';
+        const pedido1 = `${nomePrato}: R$${preco1}.`;
 
-        document.querySelector(".confirma-bebida").innerHTML = ""
+        document.querySelector(".confirma-bebida").innerHTML = pedido1;
     }
     
-}
+} */
