@@ -1,4 +1,6 @@
 var i = 0;
+let nomePrato = "";
+let preco1 = "";
 
 function selecionarComida(selecionado){
 
@@ -8,12 +10,10 @@ function selecionarComida(selecionado){
     if (selecionadoAntes !== null) {
         selecionadoAntes.classList.remove("bordaVerde");
         i--;
-        alert(i);
     }
     
     selecionado.classList.add("bordaVerde");
     i++;
-    alert(i);
     if (i > 2)
         botao.classList.add("botaoVerde");
     
@@ -28,12 +28,10 @@ function selecionarBebida(selecionado){
     if (selecionadoAntes !== null) {
         selecionadoAntes.classList.remove("bordaVerde");
         i--;
-        alert(i);
     }
     
     selecionado.classList.add("bordaVerde");
     i++;
-    alert(i);
     if (i > 2)
         botao.classList.add("botaoVerde");
 
@@ -48,14 +46,27 @@ function selecionarDoce(selecionado){
     if (selecionadoAntes !== null) {
         selecionadoAntes.classList.remove("bordaVerde");
         i--;
-        alert(i);
     }
     
     selecionado.classList.add("bordaVerde");
     i++;
-    alert(i);
     if (i > 2)
         botao.classList.add("botaoVerde");
     
 }
 
+function comprar (){
+
+    nomePrato = "ok";
+
+    if (i>2) {
+        document.querySelector(".tela-confirmacao").classList.remove("escondido");
+        document.querySelector(".tela-confirma-verde").classList.remove("escondido");
+        document.querySelector(".pedidoFinal").classList.remove("botaoVerde");
+
+        const pedido1 = '{nomePrato} : ${preco1}';
+
+        document.querySelector(".confirma-bebida").innerHTML = ""
+    }
+    
+}

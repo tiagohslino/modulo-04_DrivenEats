@@ -14,6 +14,21 @@
     <script src="script.js"></script>
 </head>
 <body>
+
+    <div class="tela-confirmacao escondido">  
+    </div>
+
+    <div class="tela-confirma-verde escondido">
+        <h1>Confirme seu pedido</h1>
+        <p class="confirma-comida">Pedido 1: preco</p>
+        <p class="confirma-bebida">Pedido 2: preco</p>
+        <p class="confirma-doce">Pedido 3: preco</p>
+        <p class="confirma-total">TOTAL: preco</p>
+        <a href="#"><p class="botao-confirmar-pedido">TUDO CERTO, PODE PEDIR</p></a>
+    </br>
+        <button class="cancelar-pedido">Cancelar</button>
+    </div>
+
     <header>
         <h1>DrivenEats</h1>
         <h2>Sua comida em 6 minutos</h2>
@@ -95,7 +110,7 @@
 
         <footer>
             <div class="rodape">
-                <button class="pedidoFinal">
+                <button class="pedidoFinal" onclick="comprar()">
                     <p>Selecione os 3 itens para fechar o pedido</p>
                 </button>
             </div>
