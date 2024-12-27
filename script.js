@@ -7,11 +7,13 @@ function selecionarComida(selecionado){
 
     if (selecionadoAntes !== null) {
         selecionadoAntes.classList.remove("bordaVerde");
-        i = 0;
+        i--;
+        alert(i);
     }
     
     selecionado.classList.add("bordaVerde");
-    i = i + 1;
+    i++;
+    alert(i);
     if (i > 2)
         botao.classList.add("botaoVerde");
     
@@ -25,10 +27,13 @@ function selecionarBebida(selecionado){
 
     if (selecionadoAntes !== null) {
         selecionadoAntes.classList.remove("bordaVerde");
+        i--;
+        alert(i);
     }
     
     selecionado.classList.add("bordaVerde");
-    i = i + 1;
+    i++;
+    alert(i);
     if (i > 2)
         botao.classList.add("botaoVerde");
 
@@ -42,12 +47,13 @@ function selecionarDoce(selecionado){
 
     if (selecionadoAntes !== null) {
         selecionadoAntes.classList.remove("bordaVerde");
-        i = 0;
+        i--;
+        alert(i);
     }
     
     selecionado.classList.add("bordaVerde");
-    i = i + 1;
-   
+    i++;
+    alert(i);
     if (i > 2)
         botao.classList.add("botaoVerde");
     
