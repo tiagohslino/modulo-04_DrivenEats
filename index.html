@@ -21,68 +21,85 @@
 
     <main>
         <div class="pratos">
-            <p class="titulo-secao">Qual rango de hoje?</p>
+            <p class="titulo-secao">Primeiro, seu prato</p>
             <ul>
+                <li class="calabresa" onclick="selecionarComida(this)">
+                    <img src="imagens/pf_calabresa.png" />
+                    <h1>Beleza, calabresa!</h1>
+                    <h2>Prato com arroz soltinho, fritas e salada crocantes, e muita calabresa!</h2>
+                    <h3>14.90</h3>
+                </li>
+                <li class="carne" onclick="selecionarComida(this)">
+                    <img src="imagens/pf_carne.jpg" />
+                    <h1>Carne suculenta</h1>
+                    <h2>Prato com arroz soltinho, fritas, salada e carne ao ponto do freguês.</h2>
+                    <h3>14.90</h3>
+                </li>
                 
-            <li>
-                <img class="calabresa" onclick="selecionarComida(this)" src="imagens/pf_calabresa.png" />
-                <h1>Beleza, calabresa!</h1>
-                <h2>Prato magnífico com arroz soltinho, fritas e salada crocantes, e muita calabresa!</h2>
-            </li>
-            <li>
-                <img class="carne" onclick="selecionarComida(this)" src="imagens/pf_carne.jpg" />
-                <h1>Carne suculenta</h1>
-                <h2>Prato com arroz soltinho, fritas, salada temperadinha e carne suculenta ao ponto do freguês.</h2>
-            </li>
-            
-            <li>
-                <img class="frango" onclick="selecionarComida(this)" src="imagens/pf_frango.jpg" />
-                <h1>Frango Frito</h1>
-                <h2>Arroz com Sazon, fritas (MC fica no chinelo), salada fresquinha e delícia de frango frito!</h2>
-            </li>
+                <li class="frango" onclick="selecionarComida(this)">
+                    <img src="imagens/pf_frango.jpg" />
+                    <h1>Frango Frito</h1>
+                    <h2>Arroz com Sazon, fritas, salada fresquinha e delícia de frango frito!</h2>
+                    <h3>14.90</h3>
+                </li>
             </ul>
         </div>
 
         <div class="bebidas">
-            <p class="titulo-secao">Vamos de quê para molhar o bico?</p>
+            <p class="titulo-secao">Agora, sua bebida</p>
             <ul>
-                <li>
-                    <img class="coca" onclick="selecionarBebida(this)" src="imagens/coca.png" />
+                <li class="coca" onclick="selecionarBebida(this)">
+                    <img src="imagens/coca.png" />
                     <h1>Coca-Cola</h1>
                     <h2>Coquinha gelada na lata!</h2>
+                    <h3>4.90</h3>
                 </li>
-                <li><img class="fanta" onclick="selecionarBebida(this)" src="imagens/fanta.png" />
+                <li class="fanta" onclick="selecionarBebida(this)">
+                    <img src="imagens/fanta.png" />
                     <h1>Fanta</h1>
-                    <h2>Essa Fanta é Fanta!</h2>
+                    <h2>Fanta bem gelada na lata!</h2>
+                    <h3>4.90</h3>
                 </li>
-                <li><img class="suco" onclick="selecionarBebida(this)" src="imagens/suco.png" />
+                <li class="suco" onclick="selecionarBebida(this)">
+                    <img src="imagens/suco.png" />
                     <h1>Suco</h1>
                     <h2>Pra você que é fitness, melhor opção!</h2>
+                    <h3>4.90</h3>
                 </li>
             </ul>
         </div>
 
         <div class="doces">
-            <p class="titulo-secao">Depois do sal, sempre o açúcar, certo?</p>
+            <p class="titulo-secao">Por fim, sua sobremesa</p>
             <ul>
-                <li>
-                    <img class="mousse" onclick="selecionarDoce(this)" src="imagens/mouse.jpg" />
+                <li class="mousse" onclick="selecionarDoce(this)">
+                    <img src="imagens/mouse.jpg" />
                     <h1>Mousse</h1>
                     <h2>Uma delícia de mousse! Ótimo remédio para a TPM!</h2>
+                    <h3>7.90</h3>
                 </li>
-                <li>
-                    <img class="brownie" onclick="selecionarDoce(this)" src="imagens/brownie.jpg" />
+                <li class="brownie" onclick="selecionarDoce(this)">
+                    <img src="imagens/brownie.jpg" />
                     <h1>Brownie</h1>
-                    <h2>Charlie e Carlinhos aprovaram!</h2>
+                    <h2>Brownie no ponto certo, quentinho, saindo do forno!</h2>
+                    <h3>7.90</h3>
                 </li>
-                <li>
-                    <img class="pudim" onclick="selecionarDoce(this)" src="imagens/pudim.jpg" />
+                <li class="pudim" onclick="selecionarDoce(this)">
+                    <img src="imagens/pudim.jpg" />
                     <h1>Pudim</h1>
                     <h2>O melhor clássico da história das sobremesas!</h2>
+                    <h3>7.90</h3>
                 </li>
             </ul>
         </div>
 
+        <footer>
+            <div class="rodape">
+                <button class="pedidoFinal">
+                    <p>Selecione os 3 itens para fechar o pedido</p>
+                </button>
+            </div>
+        </footer>
 
     </main>
 
