@@ -1,4 +1,5 @@
 var i = 0;
+
 let nomePrato = "";
 let nomeBebida = "";
 let nomeDoce = "";
@@ -7,13 +8,17 @@ let precoPrato = 0;
 let precoBebida = 0;
 let precoDoce = 0;
 
+let precoPratoReal = 0;
+let precoBebidaReal = 0;
+let precoDoceReal = 0;
+
 let soma = 0;
 
 function selecionarComida(selecionado){
     nomePrato = selecionado.getElementsByTagName('h1')[0].innerHTML;
     precoPrato = selecionado.getElementsByTagName('h3')[0].innerHTML;
     
-    let precoPratoReal = parseFloat(precoPrato);
+    precoPratoReal = parseFloat(precoPrato);
   
     const botao = document.querySelector(".pedidoFinal");
     const selecionadoAntes = document.querySelector(".pratos .bordaVerde");
@@ -25,9 +30,9 @@ function selecionarComida(selecionado){
     }
 
     selecionado.classList.add("bordaVerde");
-    console.log("Cliquei agora em", + precoPratoReal);
+    console.log(precoPratoReal);
     soma = soma + precoPratoReal;
-    console.log("Acumulado eh", + soma);
+    console.log(soma);
     
     i++;
     if (i > 2)
@@ -41,7 +46,7 @@ function selecionarBebida(selecionado){
     nomeBebida = selecionado.getElementsByTagName('h1')[0].innerHTML;
     precoBebida = selecionado.getElementsByTagName('h3')[0].innerHTML;
     
-    let precoBebidaReal = parseFloat(precoBebida);
+    precoBebidaReal = parseFloat(precoBebida);
     const botao = document.querySelector(".pedidoFinal");
     const selecionadoAntes = document.querySelector(".bebidas .bordaVerde");
 
@@ -67,7 +72,7 @@ function selecionarDoce(selecionado){
     nomeDoce = selecionado.getElementsByTagName('h1')[0].innerHTML;
     precoDoce = selecionado.getElementsByTagName('h3')[0].innerHTML;
     
-    let precoDoceReal = parseFloat(precoDoce);
+    precoDoceReal = parseFloat(precoDoce);
     const botao = document.querySelector(".pedidoFinal");
     const selecionadoAntes = document.querySelector(".doces .bordaVerde");
 
