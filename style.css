@@ -31,6 +31,7 @@ ul {
     overflow-x: scroll;
     padding-top: 17px;
     padding-bottom: 10px;
+    padding-right: 17px;
 }
 
 li {
@@ -38,7 +39,7 @@ li {
     max-width: 144px;
     background-color: #fff;
     margin-left: 19px;
-    border:3px solid #fff;
+    border:5px solid #fff;
     border-radius: 9px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -86,7 +87,7 @@ li h1, li h2, li h3 {
 }
 
 .bordaVerde {
-    border:3px solid rgb(10, 170, 10);
+    border:5px solid #32B72F;
     border-radius: 9px;
 }
 
@@ -128,7 +129,7 @@ footer button p {
 }
 
 /* versão mobile */
-@media screen and (min-width: 490px) { 
+@media screen and (min-width: 585px) { 
     ul {
             justify-content: center;        
     }
@@ -157,19 +158,59 @@ footer button p {
     transform: translate(-50%, -50%);
     z-index: 2;
     background-color: #50D074;
+    color: #fff;
+    padding-top: 40px;
 }
 
 .tela-confirma-verde h1 {
     font-size: 22px;
     font-weight: 700;
+    padding: 10px;
     
 }
 
 .tela-confirma-verde p {
     font-size: 22px;
     font-weight: 400;
+    padding: 10px;
 }
 
 .escondido {
     display: none;
+}
+
+.cancelar-pedido {
+    width: 333px;
+    height: 52px;
+    border: none;
+    position: relative;
+    background-color: #50D074;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-top:20px
+}
+
+.wpp {
+    padding-top: 30px;
+}
+
+.wpp a {
+    width: 329px;
+    height: 52px;
+   
+    border: none;
+    border-radius: 100px;
+    background: #fff;
+
+    padding: 12px 20px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+    
+    text-align: center;
+    color: #50D074;
+   
 }
